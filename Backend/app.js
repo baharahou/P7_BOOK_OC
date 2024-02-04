@@ -1,9 +1,11 @@
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
+const path = require("path");
 require("dotenv").config();
 
 const userRoutes = require("./routes/user");
+const booksRoutes = require("./routes/book");
 // lien pour connecter avec MongoDB
 mongoose
   .connect(process.env.USER_MDP_DB, {
@@ -28,4 +30,6 @@ app.use((req, res, next) => {
 });
 
 app.use("/api/auth", userRoutes);
+app.use("/api/books", booksRoutes);
+app.use("/images", express.static(path.join(__dirname, "images")));
 module.exports = app;
