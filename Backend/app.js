@@ -1,9 +1,9 @@
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
-
 require("dotenv").config();
 
+const userRoutes = require("./routes/user");
 // lien pour connecter avec MongoDB
 mongoose
   .connect(process.env.USER_MDP_DB, {
@@ -27,4 +27,5 @@ app.use((req, res, next) => {
   next();
 });
 
+app.use("/api/auth", userRoutes);
 module.exports = app;
