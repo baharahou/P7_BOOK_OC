@@ -1,0 +1,22 @@
+{
+  "name": "book_oc",
+  "version": "1.0.0",
+  "description": "projet 7 parcour dev web OC",
+  "main": "server",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baharahou/P7_BOOK_OC.git"
+  },
+  "keywords": [
+    "BOOK"
+  ],
+  "author": "elhoussaine baharahou",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/baharahou/P7_BOOK_OC/issues"
+  },
+  "homepage": "https://github.com/baharahou/P7_BOOK_OC#readme"
+}
